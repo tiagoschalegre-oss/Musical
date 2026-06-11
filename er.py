@@ -13,7 +13,7 @@ pygame.mixer.init()
 root = Tk()
 root.geometry('600x600')
 
-img= PhotoImage(file='Chrollo-PNG-Photo.png')
+img= PhotoImage(file='piano.png')
 preta= PhotoImage(file='t_preta.png')
 root.iconphoto(True, img)
 root.config(background='#02021A')
