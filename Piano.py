@@ -1,37 +1,10 @@
 from tkinter import*
 import pygame
 #----------------------------------------------------------------------
-def Do():
-  nota = pygame.mixer.Sound("Do.wav")
+def tocar_som(entrada):
+  nota = pygame.mixer.Sound(entrada)
   nota.play()
-#----------------------------------------------------------------------
-def Re():
-  nota = pygame.mixer.Sound("Re.wav")
-  nota.play()
-#----------------------------------------------------------------------
-def Mi():
-  nota = pygame.mixer.Sound("Mi.wav")
-  nota.play()
-#----------------------------------------------------------------------
-def Fa():
-  nota = pygame.mixer.Sound("Fa.wav")
-  nota.play()
-#----------------------------------------------------------------------
-def Sol():
-  nota = pygame.mixer.Sound("Sol.wav")
-  nota.play()
-#----------------------------------------------------------------------
-def La():
-  nota = pygame.mixer.Sound("La.wav")
-  nota.play()
-#----------------------------------------------------------------------
-def Si():
-  nota = pygame.mixer.Sound("Si.mp3")
-  nota.play()
-#----------------------------------------------------------------------
-def Do_():
-  nota = pygame.mixer.Sound("Do (octave).wav")
-  nota.play()
+
 
 pygame.mixer.init()
 
@@ -50,49 +23,49 @@ Do = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Do).pack(side=LEFT)
+             command=lambda n=str("Do.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Re = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Re).pack(side=LEFT)
+             command=lambda n=str("Re.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Mi = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Mi).pack(side=LEFT)
+             command=lambda n=str("Mi.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Fa = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Fa).pack(side=LEFT)
+             command=lambda n=str("Fa.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Sol = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Sol).pack(side=LEFT)
+             command=lambda n=str("Sol.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 La = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=La).pack(side=LEFT)
+             command=lambda n=str("La.wav"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Si = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Si).pack(side=LEFT)
+             command=lambda n=str("Si.mp3"):tocar_som(n)).pack(side=LEFT)
 #------------------------------------------
 Do_ = Button(root, image=preta,
              bg='#000000',
              width=30, height=130,
              activebackground='#000000', activeforeground='#000000',
-             command=Do_).pack(side='left')
+             command=lambda n=str("Do#.wav"):tocar_som(n)).pack(side='left')
 #------------------------------------------
 
 teclas= Frame(root)
