@@ -77,49 +77,79 @@ Do = Button(frame, image=tecla1,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Do.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "C.wav"))).pack(side=LEFT)
 #------------------------------------------
 Re = Button(frame, image=tecla2,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Re.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "D.wav"))).pack(side=LEFT)
 #------------------------------------------
 Mi = Button(frame, image=tecla3,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Mi.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "E.wav"))).pack(side=LEFT)
 #------------------------------------------
 Fa = Button(frame, image=tecla1,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Fa.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "F.wav"))).pack(side=LEFT)
 #------------------------------------------
 Sol = Button(frame, image=tecla2,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Sol.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "G.wav"))).pack(side=LEFT)
 #------------------------------------------
 La = Button(frame, image=tecla3,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "La.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "A.wav"))).pack(side=LEFT)
 #------------------------------------------
 Si = Button(frame, image=tecla1,
              width=30, height=130, 
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Si.mp3"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "B.wav"))).pack(side=LEFT)
 #------------------------------------------
-Do_ = Button(frame, image=tecla3,
+Do1 = Button(frame, image=tecla3,
              width=30, height=130,
              bg='#484886' ,activebackground="#484886", activeforeground="#484886",
              relief='flat',
-             command=lambda :tocar_som(os.path.join(notas, "Do#.wav"))).pack(side=LEFT)
+             command=lambda :tocar_som(os.path.join(notas, "C1.wav"))).pack(side=LEFT)
+#------------------------------------------
+Do_s = Button(frame, image=tecla3,
+             width=30, height=130,
+             bg='#484886' ,activebackground="#484886", activeforeground="#484886",
+             relief='flat',
+             command=lambda :tocar_som(os.path.join(notas, "C_s.wav"))).pack(side=LEFT)
+#------------------------------------------
+RE_s= Button(frame, image=tecla3,
+             width=30, height=130,
+             bg='#484886' ,activebackground="#484886", activeforeground="#484886",
+             relief='flat',
+             command=lambda :tocar_som(os.path.join(notas, "D_s.wav"))).pack(side=LEFT)
+#------------------------------------------
+Fa_s = Button(frame, image=tecla3,
+             width=30, height=130,
+             bg='#484886' ,activebackground="#484886", activeforeground="#484886",
+             relief='flat',
+             command=lambda :tocar_som(os.path.join(notas, "F_s.wav"))).pack(side=LEFT)
+#------------------------------------------
+Sol_s = Button(frame, image=tecla3,
+             width=30, height=130,
+             bg='#484886' ,activebackground="#484886", activeforeground="#484886",
+             relief='flat',
+             command=lambda :tocar_som(os.path.join(notas, "G_s.wav"))).pack(side=LEFT)
+#------------------------------------------
+La_s = Button(frame, image=tecla3,
+             width=30, height=130,
+             bg='#484886' ,activebackground="#484886", activeforeground="#484886",
+             relief='flat',
+             command=lambda :tocar_som(os.path.join(notas, "Bb.wav"))).pack(side=LEFT)
 #------------------------------------------
 
 frame.pack(padx=100, pady=100)
